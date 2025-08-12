@@ -42,6 +42,10 @@ app.get("/file",(req,res)=>{
     res.sendFile(path.join(__dirname,'cv.pdf'));
 });
 
+app.get('/new_feature',(req,res)=>{
+    res.send("new feature added");
+});
+
 
 const PORT = process.env.PORT || 5000;
 
